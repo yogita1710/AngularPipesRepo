@@ -1,0 +1,44 @@
+<h1><b>String Pipe</b></h1>
+
+<h3>{{title | uppercase}}</h3>
+<h3>{{title | lowercase}}</h3>
+<h3>{{title | titlecase}}</h3>
+
+<h1><b>Date Pipe</b></h1>
+<h3>Today is {{today}}</h3>
+<h3>{{today | date : 'short'}}</h3>
+<h3>{{today | date : 'full'}}</h3>
+<h3>{{today | date : 'y/M/d'}}</h3>
+<h3>{{day}}</h3>
+<h3>{{date}}</h3>
+<h3>{{month}}</h3>
+<h3>{{year}}</h3>
+<h3>{{currentdate}}</h3>
+
+<h1><b>JSON Pipe</b></h1>
+<h3>{{student | json}}</h3>
+
+<h1><b>Currency Pipe</b></h1>
+<h3>{{money | currency:'USD'}}</h3> <!--by default USD-->
+<h3>{{money | currency:'INR'}}</h3>
+<h3>{{money | currency:'CAD'}}</h3>
+<h3>{{money | currency:'EUR'}}</h3>
+<h3>{{money | currency:'AUD'}}</h3>
+
+<h1><b>Percentage Pipe</b></h1>
+<h3>{{marks | percent}}</h3><!-- value * 100%-->
+
+<h1><b>Decimal Pipe</b></h1>
+<h3>{{age | number}}</h3>
+
+<h1><b>Slice Pipe</b></h1>
+<h3>{{weekdays}}</h3>
+<h3>{{weekdays | slice:2:5}}</h3>  <!--not include 5-->
+<h3>{{weekdays | slice:3}}</h3>
+<h3>{{name}}</h3>
+<h3>{{name | slice:3}}</h3>
+
+<h1><b>Customized Pipe</b></h1>
+<h3>{{169 | sqrt}}</h3>
+<h3>{{num | sqrt}}</h3>
+<router-outlet></router-outlet>
